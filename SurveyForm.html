@@ -1,0 +1,92 @@
+<!DOCKTYPE html>
+
+<html>
+<head>
+<title>Survey Form</title>
+<link href="style.css" rel="stylesheet"> <!-css file must be declare inside head ->
+</head>
+
+<body>
+<h1 id="title">Survey Form</h1>
+<main>
+<p id="description">Let us know how we can improve freeCodeCamp</p>
+<form id="survey-form">
+
+<ul>
+<li class="row">
+<label for="fname">*Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+</li>
+
+<li class="row"
+<label for="femail">*Email</label>
+    <input type="text" id="femail" name="email" placeholder="Your Email id.." required>
+</li>
+
+<li class="row"
+<label for="fage">*Age</label>
+<input type="number" id="fage" name="age" placeholder="Age" min="0" max="115" required>
+</li>
+
+<li class="row">
+<label for="dropdown>Which option best describes your current role?</label>
+<select name="dropdown" id="dropdown">
+<option value=st>Student</option>
+<option value=ftj>Full time Job</option>
+<option value=ftl>Full time Learner</option>
+<option value=pn>Prefer not to say</option>
+<option value=o>Other</option>
+</select>
+</li>
+
+<li class="row">
+<label for="radios">How likely is that you would recommend freeCodeCamp to a friend?
+<ul>
+<li><input type="radio" name="AppSource" value=1>Newpaper</li>
+<li><input type="radio" name="AppSource" value=2>Recruiters</li>
+<li><input type="radio" name="AppSource" value=3>Web Resume Banks</li>
+<li><input type="radio" name="Appsource" value=4>Magazines</li>
+</ul>
+</li>
+
+<li class="row">
+<label for="dropdown">What do you like most in FCC:</label>
+<select name="dropdown" id="dropdown">
+<option value=k>Select an Option</option>
+<option value=ch>Challenges</option>
+<option value=b>Projects</option>
+<option value=c>Community</option>
+<option value=d>Open Source</option>
+</select>
+</li>
+
+<li class="row"
+<label for="checkbox">How did you hear about this survey?</label>
+<br>Things that should be improved in the future(Check all that apply);
+<ul>
+<li><input type="checkbox" name="fe">Front-end Projects</li>
+<input type="checkbox" name="be">Back-end Projects</li>
+<input type="checkbox" name="dv">Data Visualization</li>
+<input type="checkbox" name="ch">Challenges</li>
+<input type="checkbox" name="os">Open Source Community</li>
+<input type="checkbox" name="gh">Gitter help rooms</li>
+<input type="checkbox" name="v">Videos</li>
+<input type="checkbox" name="cm">City Meetups</li>
+<input type="checkbox" name="w">Wiki</li>
+<input type="checkbox" name="f">Forum</li>
+<input type="checkbox" name="ac">Additional Courses</li>
+</ul>
+</li>
+
+<li class="row">
+<label for="comments">Any Comments or Suggestions?</label>
+<textarea name="Comments" id="comments" cols=60 rows=6></textarea>
+</li>
+<li class="row">
+<button id="submit" type="Submit">Submit</button>
+</li>
+</ul>
+</form>
+</main>
+</body>
+</html>
